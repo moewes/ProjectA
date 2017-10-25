@@ -26,7 +26,7 @@ public class Ressource {
 
     Client client = ClientBuilder.newClient();
 
-    ServiceData data = client.target("http://localhost:8180/")
+    ServiceData data = client.target("http://backend:8080/")
             .path("Service")
             .request(MediaType.APPLICATION_JSON)
             .get(new GenericType<ServiceData>() {

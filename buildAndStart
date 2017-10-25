@@ -1,0 +1,7 @@
+
+mvn clean install
+
+docker build ./backend -t backend
+docker build ./frontend -t frontend
+
+docker-compose up
